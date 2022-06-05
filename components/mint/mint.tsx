@@ -10,7 +10,7 @@ const Mint: React.FC = () => {
   const [isMintLoading, setMintIsLoading] = React.useState<boolean>(false);
   const [count, setCounter] = React.useState<number>(1);
   const { account, provider } = useEthersProvider();
-  const contractAddress: string = "0x9410096A1f04384Df0d21366Da27402fDA8b858F";
+  const contractAddress: string = "0x70261F7ff6809b79e3BF17bBd8314aD343364F14";
 
   const mint = async () => {
     const signer = provider.getSigner();
