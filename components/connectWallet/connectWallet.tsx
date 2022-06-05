@@ -18,18 +18,15 @@ const ConnectWallet: React.FC = () => {
       setIsLoading(true);
       if (provider) {
         const network = await provider.getNetwork();
-        const resultAccount = await provider.send("eth_requestAccounts", []);
-        setAccount(ethers.utils.getAddress(resultAccount[0]));
-        setIsLoading(false);
-        // if (network.chainId === 1) {
-        //   const resultAccount = await provider.send("eth_requestAccounts", []);
-        //   setAccount(ethers.utils.getAddress(resultAccount[0]));
-        //   setIsLoading(false);
-        // } else {
-        //   setAccount(null);
-        //   setIsLoading(false);
-        //   toast.error("Please switch to main Ethereum Network on Metamask");
-        // }
+        if (network.chainId === 1) {
+          const resultAccount = await provider.send("eth_requestAccounts", []);
+          setAccount(ethers.utils.getAddress(resultAccount[0]));
+          setIsLoading(false);
+        } else {
+          setAccount(null);
+          setIsLoading(false);
+          toast.error("Please switch to main Ethereum Network on Metamask");
+        }
       }
     }
   };
