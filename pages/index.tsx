@@ -17,7 +17,7 @@ const Home: NextPage = () => {
       <div className={styles.container}>
         <div>
           <div>
-            <Image src="/logo.jpg" alt="logo" width={150} height={150} />
+            <Image src="/logo.png" alt="logo" width={230} height={150} />
           </div>
           <div>
             <Image src="/nft.gif" alt="gif" width={350} height={350} />
