@@ -16,8 +16,12 @@ const Home: NextPage = () => {
 
       <div className={styles.container}>
         <div>
-          <h1>Shell pop it NFT 💩</h1>
-          <Image src="/nft.gif" alt="gif" width={350} height={350} />
+          <div>
+            <Image src="/logo.jpg" alt="logo" width={150} height={150} />
+          </div>
+          <div>
+            <Image src="/nft.gif" alt="gif" width={350} height={350} />
+          </div>
           <Mint />
         </div>
       </div>
