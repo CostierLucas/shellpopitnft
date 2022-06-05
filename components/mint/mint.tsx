@@ -59,7 +59,7 @@ const Mint: React.FC = () => {
             <p style={{ marginTop: "10px" }}>10 NFTs per wallet</p>
           </>
         ) : (
-          "Connect fist"
+          "Connect first"
         )}
       </div>
     </div>
