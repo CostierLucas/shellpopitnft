@@ -1,7 +1,7 @@
 import React from "react";
 import { ethers } from "ethers";
 import useEthersProvider from "../../hooks/useEthersProvider";
-import Contract from "../../artifacts/contracts/Shell.sol/Shell.json";
+import Contract from "../../contracts/Shell.json";
 import { ToastContainer, toast } from "react-toastify";
 import { TailSpin } from "react-loader-spinner";
 import styles from "./mint.module.scss";
