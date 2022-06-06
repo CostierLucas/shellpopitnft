@@ -17,7 +17,7 @@ contract Shell is ERC721A, Ownable  {
     
     uint256 public TOTAL_SUPPLY_TEAM;
 
-    address public teamWallet = 0x39f5e8C23f1a7565476B8F851c0A23911E3F6Cc2;
+    address public teamWallet = 0x18D2EF7Be1c45c4CAE4Ddd47f947202186B40646;
 
     string public baseURI;
     bool public isPaused;

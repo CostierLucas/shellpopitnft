@@ -10,7 +10,7 @@ const Mint: React.FC = () => {
   const [isMintLoading, setMintIsLoading] = React.useState<boolean>(false);
   const [count, setCounter] = React.useState<number>(1);
   const { account, provider } = useEthersProvider();
-  const contractAddress: string = "0x70261F7ff6809b79e3BF17bBd8314aD343364F14";
+  const contractAddress: string = "0x5b4B42d78C96C55171F6bCaF2886bb43676170bb";
 
   const mint = async () => {
     const signer = provider.getSigner();
@@ -53,11 +53,10 @@ const Mint: React.FC = () => {
       <div className={styles.btn}>
         {account ? (
           <>
-            {/* <button onClick={() => mint()}>
+            <button onClick={() => mint()}>
               {isMintLoading ? <TailSpin width={20} color="#000" /> : "Mint"}
             </button>
-            <p style={{ marginTop: "10px" }}>10 NFTs per wallet</p> */}
-            Coming soon
+            <p style={{ marginTop: "10px" }}>10 NFTs per wallet</p>
           </>
         ) : (
           "Connect first"
