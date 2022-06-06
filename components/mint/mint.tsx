@@ -53,10 +53,11 @@ const Mint: React.FC = () => {
       <div className={styles.btn}>
         {account ? (
           <>
-            <button onClick={() => mint()}>
+            {/* <button onClick={() => mint()}>
               {isMintLoading ? <TailSpin width={20} color="#000" /> : "Mint"}
             </button>
-            <p style={{ marginTop: "10px" }}>10 NFTs per wallet</p>
+            <p style={{ marginTop: "10px" }}>10 NFTs per wallet</p> */}
+            Coming soon
           </>
         ) : (
           "Connect first"
