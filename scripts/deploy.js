@@ -6,7 +6,7 @@
 const hre = require("hardhat");
 
 async function main() {
-  const baseURI = "ipfs://Qmbusv3kFrgzDkWNSFaUGGcrxzQ8vTs1aX7rhC8PznriHi/";
+  const baseURI = "ipfs://cid/";
 
   const Shell = await hre.ethers.getContractFactory("Shell");
   const shell = await Shell.deploy(baseURI);
